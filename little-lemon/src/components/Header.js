@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/logo.svg";
 
 function Header() {
   return (
     <header>
-      <h1>Scoreboard</h1>
-      <span className="stats">Players: 1</span>
+      <img src={logo} alt="logo" />
+      <h1>Little Lemon</h1>
     </header>
   );
 }

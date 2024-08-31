@@ -3,7 +3,7 @@ import React from "react";
 function Main() {
   return (
     <main>
-      Under construction
+      <h1>Under Construction</h1>
     </main>
   );
 }
