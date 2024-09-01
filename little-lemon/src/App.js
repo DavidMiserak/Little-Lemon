@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
+import React from 'react';
+import Nav from "./components/Nav";
+import CallToAction from "./components/CallToAction";
+import Homepage from './components/Homepage';
 import Footer from './components/Footer';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Nav />
-        <Main />
-        <Footer />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Nav />
+      <CallToAction />
+      <Homepage />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

@@ -1,4 +1,6 @@
 import React from "react";
+import "./Footer.css";
+import footerImage from "../assets/fish-small.jpg";
 
 const doormat = [
   { href: "/about", text: "About" },
@@ -10,8 +12,8 @@ const doormat = [
 
 const contact = [
   { title: "Address", text: "1234 N. Elm St. New York City, NY 12345" },
-  { title: "Phone", text: "123-456-7890" },
-  { title: "Email", text: "little-lemon@expample.com" },
+  { title: "Phone", text: "123-555-7890" },
+  { title: "Email", text: "little-lemon@example.com" },
 ];
 
 const social = [
@@ -23,6 +25,8 @@ const social = [
 function Footer() {
   return (
     <footer>
+      <hr />
+      <img src={footerImage} alt="Cooking fish over a charcoal grill" />
       <section id="doormat-nav">
         <h2>Doormat Navigation</h2>
         <ul>
@@ -47,7 +51,6 @@ function Footer() {
           ))}
         </ul>
       </section>
-      <p>© 2024</p>
     </footer>
   );
 }

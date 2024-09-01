@@ -1,0 +1,33 @@
+#testimonials {
+  background-color: #495E57;
+  grid-area: testimonials;
+  display: grid;
+  grid-template-areas: "testimonial-header" "testimonial-cards";
+  padding: 1rem;
+}
+
+#testimonial-header {
+  grid-area: testimonial-header;
+}
+
+#testimonial-header h1 {
+  color: #F4CE14;
+}
+
+.testimonial-cards {
+  grid-area: testimonial-cards;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  #testimonials {
+    grid-template-areas: "testimonial-header" "testimonial-cards";
+  }
+
+  .testimonial-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

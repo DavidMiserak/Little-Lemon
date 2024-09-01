@@ -1,24 +1,36 @@
-.App {
+body {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Karla Text', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.yellow-button {
+  background-color: #F4CE14;
+  color: #333333;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 1.0rem;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+p {
+  text-align: left;
 }
 
-.App-intro {
-  font-size: large;
+h1 {
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h2 {
+  font-family: "Markazi Text", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .yellow-button {
+    width: 25vw;
+    height: 5vh;
+  }
 }

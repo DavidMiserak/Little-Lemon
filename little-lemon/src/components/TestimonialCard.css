@@ -1,0 +1,49 @@
+.testimonial-card {
+  display: grid;
+  grid-template-areas: "tc-stars tc-stars" "tc-image tc-name" "tc-info tc-info";
+  background-color: #EDEFEE;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 75vw;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.testimonial-stars {
+  grid-area: tc-stars;
+  margin-right: auto;
+  color: #333333;
+}
+
+.testimonial-card img {
+  grid-area: tc-image;
+  border-radius: 1rem;
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+}
+
+.testimonial-name {
+  grid-area: tc-name;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+.testimonial-review {
+  grid-area: tc-info;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    width: 15vw;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .testimonial-card img {
+    height: 15vh;
+    width: auto;
+  }
+}

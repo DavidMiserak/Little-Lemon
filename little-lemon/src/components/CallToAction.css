@@ -1,0 +1,59 @@
+header {
+  display: grid;
+  grid-template-areas: "hero-text" "hero-image";
+  background-color: #495E57;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  color: #EDEFEE;
+}
+
+header article {
+  grid-area: hero-text;
+  text-align: center;
+}
+
+header article h1 {
+  color: #F4CE14;
+  margin-bottom: 0;
+}
+
+header article h2 {
+  margin-top: 0;
+}
+
+header a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header aside {
+  grid-area: hero-image;
+  margin-top: 1rem;
+}
+
+header aside img {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 75vw;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-areas: "hero-text hero-image";
+    grid-template-columns: 1fr 2fr;
+  }
+
+  header article {
+    text-align: left;
+  }
+
+  header aside img {
+    width: auto;
+    height: 60vh;
+    margin-left: auto;
+  }
+}

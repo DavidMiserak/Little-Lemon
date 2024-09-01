@@ -1,0 +1,32 @@
+#about {
+  grid-area: about;
+  display: grid;
+  grid-template-areas: "about-text" "about-image";
+  padding: 1rem;
+}
+
+#about article {
+  grid-area: about-text;
+}
+
+#about aside img {
+  grid-area: about-image;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 75vw;
+  height: auto;
+}
+
+
+@media (min-width: 768px) {
+  #about {
+    grid-template-areas: "about-text about-image";
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #about aside img {
+    width: 40vw;
+    height: auto;
+    margin-left: auto;
+  }
+}

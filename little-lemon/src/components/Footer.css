@@ -1,0 +1,65 @@
+footer {
+  display: grid;
+  grid-template-areas: "footer-image" "doormat" "contact" "social";
+  background-color: #495E57;
+  padding: 1rem;
+  color: #FDEFEE;
+}
+
+footer img {
+  display: none;
+}
+
+footer section {
+  text-align: left;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer #doormat-nav {
+  grid-area: doormat;
+}
+
+footer #contact-info {
+  grid-area: contact;
+}
+
+footer #social-media {
+  grid-area: social;
+}
+
+footer ul a {
+  color: #FDEFEE;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+footer ul a:active {
+  text-decoration: underline;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    grid-template-areas: "footer-image doormat contact social";
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  footer img {
+    grid-area: footer-image;
+    display: block;
+    border-radius: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 50vh;
+  }
+}

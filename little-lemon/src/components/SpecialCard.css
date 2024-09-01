@@ -1,0 +1,47 @@
+.special-card {
+  display: grid;
+  grid-template-areas: "sc-image" "sc-info";
+  background-color: #f9f9f9;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 75vw;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.special-card img {
+  grid-area: sc-image;
+  border-radius: 1rem;
+  width: 99%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.special-card div {
+  grid-area: sc-info;
+  display: grid;
+  grid-template-areas: "sc-title sc-price" "sc-description sc-description";
+  grid-gap: 0.5rem;
+}
+
+.special-card h2 {
+  grid-area: sc-title;
+}
+
+.special-price {
+  grid-area: sc-price;
+  color: #EE9972;
+}
+
+.special-card p {
+  grid-area: sc-description;
+}
+
+@media (min-width: 768px) {
+  .special-card {
+    width: 25vw;
+    height: auto;
+  }
+}
