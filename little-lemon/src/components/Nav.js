@@ -1,26 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 import logo from "../assets/logo.svg";
 
 function Nav() {
-  const links = [
-    { href: "/", text: "Home" },
-    { href: "/#reservation", text: "Reservations" },
-    { href: "/#menu", text: "Menu" },
-    { href: "/#order-online", text: "Order Online" },
-    { href: "/#about", text: "About" },
-    { href: "/#login", text: "Log In" },
-  ];
-
   return (
     <nav>
-      <a href="/" className="logo">
-        <img src={logo} alt="logo" />
-      </a>
+      <img src={logo} alt="logo" />
       <ul>
-        {links.map((link) => (
-          <li key={link.href}><a href={link.href}>{link.text}</a></li>
-        ))}
+        <li><Link to="/" className="nav-item">Home</Link></li>
+        <li><Link to="/booking">Book a Table</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/order-online">Order Online</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/login">Log In</Link></li>
       </ul>
     </nav>
   );
