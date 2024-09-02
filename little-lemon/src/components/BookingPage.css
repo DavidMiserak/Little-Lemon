@@ -1,3 +1,5 @@
-main {
+.booking-page {
+  display: grid;
   background-color: #EDEFEE;
+  margin: 0 auto;
 }

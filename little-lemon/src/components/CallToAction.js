@@ -1,6 +1,7 @@
 import React from 'react';
 import slab from "../assets/food-slab-small.jpg";
 import "./CallToAction.css";
+import YellowCTA from "./YellowCTA";
 
 function CallToAction() {
 	return (
@@ -14,7 +15,7 @@ function CallToAction() {
 				</p>
 
 				<br />
-				<a href="/#reservations" className="yellow-button">Reserve a Table</a>
+				<YellowCTA to="/booking" text="Book a Table" />
 			</article>
 
 			<aside>

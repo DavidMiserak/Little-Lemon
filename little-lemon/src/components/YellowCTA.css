@@ -1,0 +1,23 @@
+.yellow-cta {
+  background-color: #F4CE14;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 75vw;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.yellow-cta a {
+  color: #333333;
+  text-decoration: none;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+  .yellow-cta {
+    width: 25vw;
+    height: auto;
+  }
+}
