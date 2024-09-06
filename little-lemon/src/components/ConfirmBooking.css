@@ -1,0 +1,26 @@
+.confirm-booking {
+  white-space: nomal;
+  background-color: #EDEFEE;
+  padding: 1rem;
+}
+
+.confirm-booking h1 {
+  text-align: center;
+  font-size: 1.0rem;
+  text-decoration: underline;
+}
+
+.confirm-booking p {
+  font-size: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .confirm-booking p {
+    width: 30vw;
+    height: auto;
+  }
+}

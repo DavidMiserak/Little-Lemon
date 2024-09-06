@@ -1,4 +1,3 @@
-// BookingForm.js
 import React from 'react';
 import {
 	Box,
@@ -14,7 +13,7 @@ import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 import { submitAPI } from '../api';
 
-function BookingForm({ availableTimes, onDateChange }) {
+function BookingForm({ availableTimes, onDateChange, formSubmit }) {
 	const ocassionOptions = ['Birthday', 'Anniversary'];
 
 	const formik = useFormik({
@@ -22,16 +21,14 @@ function BookingForm({ availableTimes, onDateChange }) {
 			resDate: '',
 			resTime: '',
 			resGuests: 1,
-			resOccasion: ocassionOptions[0],
+			resOccasion: '',
 		},
 		onSubmit: (values) => {
-			const seconds = 3;
-			// Simulate an API call
-			setTimeout(() => {
+			if (submitAPI(values)) {
 				formik.setSubmitting(false);
-				submitAPI(values);
+				formSubmit(values);
 				formik.resetForm();
-			}, seconds * 1000);
+			}
 		},
 		validationSchema: Yup.object({
 			resDate: Yup.date().required('Required'),
@@ -131,6 +128,7 @@ function BookingForm({ availableTimes, onDateChange }) {
 BookingForm.propTypes = {
 	availableTimes: PropTypes.array.isRequired,
 	onDateChange: PropTypes.func.isRequired,
+	formSubmit: PropTypes.func.isRequired,
 };
 
 export default BookingForm;

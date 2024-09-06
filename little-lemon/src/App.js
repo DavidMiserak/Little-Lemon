@@ -23,6 +23,7 @@ function App() {
             </>
           } />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="/confirm-booking" element={<ConfirmBooking />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
         <Footer />

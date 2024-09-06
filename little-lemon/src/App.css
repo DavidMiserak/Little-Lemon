@@ -3,6 +3,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Karla Text', sans-serif;
+  background-color: #EDEFEE;
 }
 
 p {
@@ -17,11 +18,4 @@ h2 {
   font-family: "Markazi Text", serif;
   font-style: normal;
   font-weight: normal;
-}
-
-@media (min-width: 768px) {
-  .yellow-button {
-    width: 25vw;
-    height: 5vh;
-  }
 }
