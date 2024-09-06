@@ -6,6 +6,7 @@ import CallToAction from "./components/CallToAction";
 import Footer from './components/Footer';
 import Homepage from './components/Homepage';
 import BookingPage from './components/BookingPage';
+import ConfirmBooking from './components/ConfirmBooking';
 import './App.css';
 
 function App() {
@@ -13,10 +14,16 @@ function App() {
     <div>
       <ChakraProvider>
         <Nav />
-        <CallToAction />
+        <hr />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={
+            <>
+              <CallToAction />
+              <Homepage />
+            </>
+          } />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
         <Footer />
       </ChakraProvider>

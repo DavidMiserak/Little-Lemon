@@ -12,6 +12,7 @@ import {
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 import PropTypes from 'prop-types';
+import { submitAPI } from '../api';
 
 function BookingForm({ availableTimes, onDateChange }) {
 	const ocassionOptions = ['Birthday', 'Anniversary'];
@@ -28,11 +29,7 @@ function BookingForm({ availableTimes, onDateChange }) {
 			// Simulate an API call
 			setTimeout(() => {
 				formik.setSubmitting(false);
-				alert(
-					"Your reservation has been made for " +
-					`${values.resDate} at ${values.resTime} ` +
-					`for ${values.resGuests}.`
-				);
+				submitAPI(values);
 				formik.resetForm();
 			}, seconds * 1000);
 		},
