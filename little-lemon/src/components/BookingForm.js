@@ -116,6 +116,7 @@ function BookingForm({ availableTimes, onDateChange, formSubmit }) {
 						isLoading={formik.isSubmitting}
 						loadingText="Submitting..."
 						colorScheme="yellow"
+						aria-label="Make your reservation"
 					>
 						Make your reservation
 					</Button>
