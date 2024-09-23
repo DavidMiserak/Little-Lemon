@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import footerImage from "../assets/fish-small.jpg";
 
 const doormat = [
-  { href: "/about", text: "About" },
-  { href: "/menu", text: "Menu" },
-  { href: "/reservations", text: "Reservations" },
-  { href: "/order-online", text: "Order Online" },
-  { href: "/login", text: "Log In" },
+  { href: "/#about", text: "About" },
+  { href: "/#menu", text: "Menu" },
+  { href: "/booking", text: "Reservations" },
+  { href: "/#order-online", text: "Order Online" },
+  { href: "/#login", text: "Log In" },
 ];
 
 const contact = [
@@ -31,7 +32,7 @@ function Footer() {
         <h2>Doormat Navigation</h2>
         <ul>
           {doormat.map((link) => (
-            <li key={link.href}><a href={link.href}>{link.text}</a></li>
+            <li key={link.href}><Link to={link.href}>{link.text}</Link></li>
           ))}
         </ul>
       </section>
