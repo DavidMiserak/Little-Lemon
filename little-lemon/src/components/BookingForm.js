@@ -133,4 +133,3 @@ BookingForm.propTypes = {
 };
 
 export default BookingForm;
-
